@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Insulin Calculator",
   description: "Calculate insulin doses based on carbohydrate content",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -27,6 +26,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'

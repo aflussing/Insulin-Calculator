@@ -28,6 +28,8 @@ export const translations = {
       salt_100g: "Salt",
       fiber_100g: "Fiber",
     },
+    searchingProducts: "Searching products...",
+    searchError: "An error occurred while searching. Please try again.",
   },
   es: {
     mainTitle: "Calculadora de Insulina",
@@ -57,6 +59,8 @@ export const translations = {
       salt_100g: "Sal",
       fiber_100g: "Fibra",
     },
+    searchingProducts: "Buscando productos...",
+    searchError: "Ocurrió un error durante la búsqueda. Por favor, intente nuevamente.",
   },
 }
 
