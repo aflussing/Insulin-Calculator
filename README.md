@@ -1,90 +1,70 @@
-# Insulin Calculator WebApp
+# Insulin Calculator
 
-This project is a modern, responsive web application that calculates insulin dosage based on the carbohydrate content of selected food products. It integrates with the [Open Food Facts API](https://world.openfoodfacts.org/) to fetch nutritional data, and it uses [Tailwind CSS](https://tailwindcss.com/) for a modern, responsive design. The application supports both English and Spanish (with automatic detection based on the user's browser) and offers a theme switcher for light and dark modes.
+Insulin Calculator is a web application designed to help people with diabetes calculate their insulin doses based on the carbohydrate content of foods. The app allows users to search for products, view nutritional information, and calculate the required insulin units based on serving size and individual insulin-to-carb ratios.
 
 ## Features
 
-- **Product Search:**  
-  Search for food products by name using the Open Food Facts API.
-  
-- **Product Preview:**  
-  Display product previews with images and store information (if available).
+- Product search using the Open Food Facts database
+- Bilingual support (English and Spanish)
+- Display of nutritional information for selected products
+- Calculation of insulin units based on carbohydrate content
+- Responsive design with light and dark mode support
 
-- **Nutritional Table:**  
-  Show a detailed nutritional table for a selected product.
+## Technologies Used
 
-- **Insulin Calculation:**  
-  Calculate the required insulin units based on:
-  - Nutritional data (carbohydrates per 100g)
-  - Serving size (grams)
-  - Insulin-to-Carb ratio (grams per unit)
+- Next.js 13 (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- next-themes for theme management
 
-- **Internationalization:**  
-  Automatic language detection (English/Spanish) with a dropdown to manually change the language.
+## Installation
 
-- **Theme Switching:**  
-  Easily toggle between a light and dark theme.
+To set up the project locally, follow these steps:
 
-## Technologies
+1. Clone the repository:
+   \`\`\`
+   git clone https://github.com/yourusername/insulin-calculator.git
+   cd insulin-calculator
+   \`\`\`
 
-- **HTML/CSS/JavaScript:** Basic web technologies.
-- **Tailwind CSS:** For modern and responsive design.
-- **Open Food Facts API:** To retrieve nutritional data for food products.
+2. Install the dependencies:
+   \`\`\`
+   npm install
+   \`\`\`
 
-## Getting Started
+3. Run the development server:
+   \`\`\`
+   npm run dev
+   \`\`\`
 
-### Prerequisites
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-- A modern web browser.
-- An internet connection to load the Tailwind CSS CDN and access the Open Food Facts API.
+## Usage
 
-### Installation
+1. Select your preferred language (English or Spanish) using the language selector in the top-left corner.
+2. Enter a product name in the search bar and click the "Search Product" button.
+3. From the search results, click on a product to view its nutritional information.
+4. Enter your serving size (in grams) and your insulin-to-carb ratio.
+5. Click the "Calculate Insulin Units" button to get the recommended insulin dose.
 
-1. **Clone or Download the Repository:**  
-   You can clone this repository or simply copy the code from the provided HTML file.
+## Project Structure
 
-2. **Run the Application:**  
-   - Open the `index.html` file in your web browser.
-   - Alternatively, paste the code into an online editor such as [CodePen](https://codepen.io/).
-
-### Usage
-
-1. **Search for a Product:**  
-   - Enter the product name in the search field and click **"Search Product"**.
-   - A list of matching products will appear, each showing a preview with an image and store information.
-
-2. **Select a Product:**  
-   - Click on a product to view its details.
-   - The product details section displays an enlarged image and a nutritional table based on available data.
-
-3. **Calculate Insulin Units:**  
-   - Input the serving size (in grams) and your personal insulin-to-carb ratio.
-   - Click **"Calculate Insulin Units"** to see the calculated dose.
-
-4. **Change Language/Theme:**  
-   - Use the language dropdown at the top-right to switch between English and Spanish.
-   - Use the theme dropdown to toggle between light and dark modes.
-
-## Customization
-
-- **Internationalization:**  
-  The application uses a JavaScript object to manage translations. You can add more languages or modify the existing texts as needed.
-
-- **Theme Settings:**  
-  Theme switching is achieved via Tailwind CSS dark mode. Modify or extend the styling by changing the Tailwind CSS classes in the HTML file.
-
-- **API Integration:**  
-  The Open Food Facts API is used for retrieving product data. You can customize the API queries or expand the data displayed.
+- \`app/\`: Contains the main application pages and layout
+- \`components/\`: Reusable React components
+- \`contexts/\`: React context for language management
+- \`utils/\`: Utility functions and translations
 
 ## Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests for improvements and bug fixes.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Disclaimer
+
+This application is for informational purposes only and is not a substitute for professional medical advice. Always consult with a healthcare professional before making any changes to your insulin regimen.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is open source and available under the [MIT License](LICENSE).
 
-## Acknowledgements
-
-- [Open Food Facts](https://world.openfoodfacts.org/) for providing the nutritional data API.
-- [Tailwind CSS](https://tailwindcss.com/) for the styling framework.
